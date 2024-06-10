@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5000';
+const API_URL = 'https://blogging-app-7uhz.onrender.com';
 
 const signupForm = document.getElementById('signup-form');
 const loginForm = document.getElementById('login-form');
@@ -7,7 +7,7 @@ const postList = document.getElementById('post-list');
 const logoutButton = document.createElement('button');
 logoutButton.textContent = 'Logout';
 logoutButton.style.display = 'none'; // Initially hide logout button
-document.body.appendChild(logoutButton);
+document.body.appendChild(logoutButton); 
 
 // Toggle between signup and login forms
 document.getElementById('show-login').addEventListener('click', (e) => {
