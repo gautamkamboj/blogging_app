@@ -37,8 +37,10 @@ signupForm.addEventListener('submit', async (e) => {
       body: JSON.stringify({ username, email, password }),
     });
     const data = await res.json();
+    
     alert(data.message);
   } catch (error) {
+    console.log(error);
     alert('Error signing up');
   }
 });
@@ -62,6 +64,7 @@ loginForm.addEventListener('submit', async (e) => {
       loadPosts();
     }
   } catch (error) {
+    console.log(error);
     alert('Error logging in');
   }
 });
